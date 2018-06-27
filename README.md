@@ -1,5 +1,10 @@
-﻿# Movie Voting App (On .NET Core framework, and SQL Server)
-To deploy this project to Docker, follow steps `6, 7, 8, 9` on the `Setup project to deploy to Docker` section.
+﻿# Movie Voting App (on .NET Core framework, and SQL Server 2017)
+This project is build with `ASP.NET Core` framwork, conecting to a database in `SQL Server 2017 on Docker`. To setup a simple web app with `ASP.NET Core` framework, you can refer to [this tutorial](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages-mac/?view=aspnetcore-2.1) on microsoft.com
+
+To run this project on your local machine, follows the settings mentioned on the [Setup database connection on local dev environment](#setup-database-connection-on-local-dev-environment) section.
+
+To deploy this project to Docker, follow steps `6, 7, 8, 9` on the [Setup project to deploy to Docker](#setup-project-to-deploy-to-docker) section.
+
 
 ## Setup SQL Server on Docker
 1. Download SQL Server container
@@ -97,3 +102,10 @@ services.AddDbContext<ApplicationDbContext>(
 7. On command prompt, run `docker build -t image-name .`
 8. On command prompt, run `docker run -d -p 8000:80 --name container-name image-name`
 9. Visit http://localhost:8000
+
+
+## References
+1. Simple ASP.NET Core tutorial - https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages-mac/?view=aspnetcore-2.1
+2. Run SQL Server 2017 container image on Docker - https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-linux-2017
+3. Use SQL Server with Docker on local ASP.NET Core project - https://codebrains.io/how-to-use-sql-server-with-docker-and-asp-net-core-on-mac/ 
+4. ASP.NET Core with SQL Server on Docker - https://docs.docker.com/compose/aspnet-mssql-compose/
