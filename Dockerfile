@@ -1,17 +1,8 @@
-FROM microsoft/aspnetcore-build:2.0 AS build-env
+FROM microsoft/aspnetcore-build:2.0
+COPY . /app
 WORKDIR /app
-
-# Copy csproj and restore as distinct layers
-COPY *.csproj ./
 RUN dotnet restore MovieVotingCoreSQL.csproj
-
-# Copy everything else and build
-COPY . ./
-RUN dotnet publish -c Release -o out MovieVotingCoreSQL.csproj
-
-# Build runtime image
-FROM microsoft/aspnetcore:2.0
-WORKDIR /app
-COPY --from=build-env /app/out .
-
-ENTRYPOINT ["dotnet", "MovieVotingCoreSQL.dll"]
+RUN dotnet build MovieVotingCoreSQL.csproj
+EXPOSE 80/tcp
+RUN chmod +x ./entrypoint.sh
+CMD /bin/bash ./entrypoint.sh

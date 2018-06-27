@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{DD341F32-DF2C-4CF0-9101-93B1F6EADAB1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.override.yml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmptyTextFile.txt">
     <Files>
       <File FileName="appsettings.json" Line="9" Column="23" />
-      <File FileName="Startup.cs" Line="27" Column="82" />
+      <File FileName="Startup.cs" Line="27" Column="56" />
       <File FileName="MovieVotingCoreSQL.csproj" Line="1" Column="1" />
       <File FileName="Program.cs" Line="32" Column="51" />
       <File FileName="Pages/Index.cshtml.cs" Line="10" Column="29" />
@@ -11,9 +11,10 @@
       <File FileName="Pages/About.cshtml" Line="7" Column="1" />
       <File FileName="Pages/Contact.cshtml" Line="1" Column="1" />
       <File FileName="Pages/Contact.cshtml.cs" Line="1" Column="1" />
-      <File FileName="Dockerfile" Line="6" Column="38" />
-      <File FileName="docker-compose.yml" Line="1" Column="15" />
+      <File FileName="Dockerfile" Line="8" Column="30" />
+      <File FileName="docker-compose.yml" Line="14" Column="38" />
       <File FileName="docker-compose.override.yml" Line="1" Column="1" />
+      <File FileName="EmptyTextFile.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
