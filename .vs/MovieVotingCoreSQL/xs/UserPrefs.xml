@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{DD341F32-DF2C-4CF0-9101-93B1F6EADAB1}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.override.yml">
+    <Files>
+      <File FileName="appsettings.json" Line="9" Column="23" />
+      <File FileName="Startup.cs" Line="27" Column="82" />
+      <File FileName="MovieVotingCoreSQL.csproj" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="32" Column="51" />
+      <File FileName="Pages/Index.cshtml.cs" Line="10" Column="29" />
+      <File FileName="Pages/Index.cshtml" Line="2" Column="18" />
+      <File FileName="Pages/About.cshtml.cs" Line="10" Column="29" />
+      <File FileName="Pages/About.cshtml" Line="7" Column="1" />
+      <File FileName="Pages/Contact.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Contact.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Dockerfile" Line="6" Column="38" />
+      <File FileName="docker-compose.yml" Line="1" Column="15" />
+      <File FileName="docker-compose.override.yml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.MovieVotingCoreSQL PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
