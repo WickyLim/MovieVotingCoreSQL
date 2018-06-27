@@ -11,7 +11,7 @@ To deploy this project to Docker, follow steps `6, 7, 8, 9` on the [Setup projec
 ```shell
 docker pull microsoft/mssql-server-linux:2017-latest
 ```
-2. Install SQL Server container
+2. Install SQL Server container (replace all `<YourStrong!Passw0rd>` after this to your own password)
 ```shell
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=<YourStrong!Passw0rd>" -p 1433:1433 --name sql1 -d microsoft/mssql-server-linux:2017-latest
 ```
@@ -26,11 +26,11 @@ docker ps -a
     User: SA
     Password: <YourStrong!Passw0rd>
 ```
-5. On your Database IDE, create a database instance 
+5. On your Database IDE, create a database instance (the instance name will be `<YourDatabaseInstance>` below)
 
 
 ## Setup database connection on local dev environment
-1. In `appsettings.json` file of your project, add a default connection string
+1. In `appsettings.json` file of your project, add a default connection string (replace all `<YourDatabaseInstance>` after this to your own instance name)
 ```shell
 ConnectionStrings": {
   "DefaultConnection": "Data Source=127.0.0.1,1433;Initial Catalog=<YourDatabaseInstance>;User ID=sa;Password=<YourStrong!Passw0rd>"
@@ -45,7 +45,7 @@ services.AddDbContext<ApplicationDbContext>(options =>
 
 ## Setup project to deploy to Docker
 1. Right click project on Solution Explorer > Add > Add Docker Support
-2. Change `Dockerfile` to
+2. Change `Dockerfile` to (replace `ProjectName` to your own project name)
 ```shell
 FROM microsoft/aspnetcore-build:lts
 COPY . /app
@@ -99,8 +99,8 @@ services.AddDbContext<ApplicationDbContext>(
     options => options.UseSqlServer(connection));
 ```
 6. On command prompt, navigate to project's directory
-7. On command prompt, run `docker build -t image-name .`
-8. On command prompt, run `docker run -d -p 8000:80 --name container-name image-name`
+7. On command prompt, run `docker build -t image-name .` (replace `image-name` to your own preferred name)
+8. On command prompt, run `docker run -d -p 8000:80 --name container-name image-name` (replace `container-name` and `image-name` to your own preferred name)
 9. Visit http://localhost:8000
 
 
