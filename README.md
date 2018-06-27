@@ -1,4 +1,7 @@
-﻿## Setup SQL Server on Docker
+﻿# Movie Voting App (On .NET Core framework, and SQL Server)
+To deploy this project to Docker, follow steps `6, 7, 8, 9` on the `Setup project to deploy to Docker` section.
+
+## Setup SQL Server on Docker
 1. Download SQL Server container
 ```shell
 docker pull microsoft/mssql-server-linux:2017-latest
