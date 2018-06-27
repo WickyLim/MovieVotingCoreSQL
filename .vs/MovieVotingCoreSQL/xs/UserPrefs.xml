@@ -11,9 +11,10 @@
       <File FileName="Pages/About.cshtml" Line="7" Column="1" />
       <File FileName="Pages/Contact.cshtml" Line="1" Column="1" />
       <File FileName="Pages/Contact.cshtml.cs" Line="1" Column="1" />
-      <File FileName="Dockerfile" Line="8" Column="30" />
-      <File FileName="docker-compose.yml" Line="14" Column="38" />
+      <File FileName="Dockerfile" Line="5" Column="17" />
+      <File FileName="docker-compose.yml" Line="10" Column="7" />
       <File FileName="docker-compose.override.yml" Line="1" Column="1" />
+      <File FileName="entrypoint.sh" Line="12" Column="14" />
       <File FileName="EmptyTextFile.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
