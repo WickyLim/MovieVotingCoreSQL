@@ -17,7 +17,7 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=<YourStrong!Passw0rd>" -p 1433:143
 ```
 3. View docker containers to check if microsoft/mssql-server-linux is running
 ```shell
-docker ps -a
+docker ps
 ```
 4. Access your database from Database IDE with this configuration:
 ```shell
