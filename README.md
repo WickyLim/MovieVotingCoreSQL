@@ -38,8 +38,18 @@ ConnectionStrings": {
 ```
 2. In `Startup.cs` file of your project, add a SQLServer connection (or change from the original SQLite connection)
 ```shell
-services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+// This method gets called by the runtime. Use this method to add services to the container.
+public void ConfigureServices(IServiceCollection services)
+{
+    .
+    .
+    .
+    services.AddDbContext<ApplicationDbContext>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+    .
+    .
+    .
+}
 ```
 
 
@@ -89,14 +99,23 @@ services:
 ```
 5. In `Startup.cs` file of your project, change you SQLServer connection
 ```shell
-// Database connection string.
-// Make sure to update the Password value below from "<YourStrong!Passw0rd>" to your actual password.
-var connection = @"Server=db;Database=<YourDatabaseInstance>;User=sa;Password=<YourStrong!Passw0rd>;";
+public void ConfigureServices(IServiceCollection services)
+{
+    .
+    .
+    .
+    // Database connection string.
+    // Make sure to update the Password value below from "<YourStrong!Passw0rd>" to your actual password.
+    var connection = @"Server=db;Database=<YourDatabaseInstance>;User=sa;Password=<YourStrong!Passw0rd>;";
 
-// This line uses 'UseSqlServer' in the 'options' parameter
-// with the connection string defined above.
-services.AddDbContext<ApplicationDbContext>(
-    options => options.UseSqlServer(connection));
+    // This line uses 'UseSqlServer' in the 'options' parameter
+    // with the connection string defined above.
+    services.AddDbContext<ApplicationDbContext>(
+        options => options.UseSqlServer(connection));
+    .
+    .
+    .
+}
 ```
 6. On command prompt, navigate to project's directory
 7. On command prompt, run `docker build -t image-name .` (replace `image-name` to your own preferred name)
