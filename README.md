@@ -1,9 +1,9 @@
 ﻿# Movie Voting App (on .NET Core framework, and SQL Server 2017)
 This project is build with `ASP.NET Core` framwork, conecting to a database in `SQL Server 2017 on Docker`. To setup a simple web app with `ASP.NET Core` framework, you can refer to [this tutorial](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages-mac/?view=aspnetcore-2.1) on microsoft.com
 
-To run this project on your local machine, follows the settings mentioned on the [Setup database connection on local dev environment](#setup-database-connection-on-local-dev-environment) section.
+To run this project on your local machine, [Setup SQL Server on Docker](#setup-sql-server-on-docker) and follows the settings mentioned on the [Setup database connection on local dev environment](#setup-database-connection-on-local-dev-environment) section.
 
-To deploy this project to Docker, follow steps `6, 7, 8, 9` on the [Setup project to deploy to Docker](#setup-project-to-deploy-to-docker) section.
+To deploy this project to Docker, [Setup SQL Server on Docker](#setup-sql-server-on-docker) and follow steps `6, 7, 8, 9` on the [Setup project to deploy to Docker](#setup-project-to-deploy-to-docker) section.
 
 
 ## Setup SQL Server on Docker
