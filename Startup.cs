@@ -24,7 +24,7 @@ namespace MovieVotingCoreSQL
         public void ConfigureServices(IServiceCollection services)
         {
             //when deploy to Docker
-            var connection = @"Server=db;Database=Movie;User=sa;Password=Your_password123;";
+            var connection = @"Server=db;Database=Movie;User=sa;Password=P@ssw0rd123;";
             services.AddDbContext<MovieContext>(options =>
         options.UseSqlServer(connection));
 

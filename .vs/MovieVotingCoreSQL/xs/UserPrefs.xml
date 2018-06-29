@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{DD341F32-DF2C-4CF0-9101-93B1F6EADAB1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="README.md">
+  <MonoDevelop.Ide.Workbench ActiveDocument=".dockerignore">
     <Files>
       <File FileName="appsettings.json" Line="9" Column="23" />
-      <File FileName="Startup.cs" Line="27" Column="56" />
+      <File FileName="Startup.cs" Line="40" Column="6" />
       <File FileName="MovieVotingCoreSQL.csproj" Line="1" Column="1" />
       <File FileName="Program.cs" Line="32" Column="51" />
       <File FileName="Pages/Index.cshtml.cs" Line="10" Column="29" />
@@ -11,11 +11,15 @@
       <File FileName="Pages/About.cshtml" Line="7" Column="1" />
       <File FileName="Pages/Contact.cshtml" Line="1" Column="1" />
       <File FileName="Pages/Contact.cshtml.cs" Line="1" Column="1" />
-      <File FileName="Dockerfile" Line="5" Column="17" />
-      <File FileName="docker-compose.yml" Line="10" Column="7" />
+      <File FileName="Dockerfile" Line="5" Column="18" />
+      <File FileName="docker-compose.yml" Line="15" Column="17" />
       <File FileName="docker-compose.override.yml" Line="1" Column="1" />
-      <File FileName="entrypoint.sh" Line="12" Column="14" />
-      <File FileName="README.md" Line="111" Column="98" />
+      <File FileName="entrypoint.sh" Line="6" Column="32" />
+      <File FileName="README.md" Line="20" Column="10" />
+      <File FileName="Migrations/20180627073653_InitialCreate.cs" Line="1" Column="1" />
+      <File FileName="appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="bundleconfig.json" Line="1" Column="1" />
+      <File FileName=".dockerignore" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
